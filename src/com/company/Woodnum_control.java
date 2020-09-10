@@ -1,13 +1,15 @@
 package com.company;
 
-public class Woodnum_control extends person
+public final class Woodnum_control extends person
 {
     int experience;
+
     Woodnum_control (String name, int age, int experience)
     {
         super(name, age);
         this.experience = experience;
     }
+
     int control (int wood_amount, int order)
     {
         if ((wood_amount - order) < (wood_amount/10))
@@ -20,4 +22,5 @@ public class Woodnum_control extends person
                 return 1;
             }
     }
+
 }
